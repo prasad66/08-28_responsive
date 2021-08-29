@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.card1 {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 10px 0 0 ;
+}
+.card2 {
+  background-color: hsl(184, 100%, 22%);
+}
+.card3 {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 0 10px 10px;
+}
+
+.card {
+  width: 300px;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 60px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+
+}
+
+h2{
+    margin-bottom: 10px;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+    font-size: xx-large;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    letter-spacing: 3px;
+}
+
+.logo{
+    height:40px;
+}
+
+.logo-1{
+    background: url(../images/icon-sedans.svg) no-repeat;
+}
+.logo-2{
+    background: url(../images/icon-suvs.svg) no-repeat;
+}
+.logo-3{
+    background: url(../images/icon-luxury.svg) no-repeat;
+}
+
+.link{
+    text-align: center;
+ background-color: hsl(0, 0%, 95%);  
+ font-family: 'Lexend Deca', sans-serif;
+ font-weight: lighter;
+ width: fit-content;
+ padding: 15px 25px;
+ border-radius: 9999px;
+}
+
+.link-1 a{
+    color: hsl(31, 77%, 52%);
+}
+
+.link-2 a{
+  color: hsl(184, 100%, 22%);
+}
+
+.link-3 a{
+  color: hsl(179, 100%, 13%);
+}
+
+a{
+    text-decoration: none; 
+    
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: small;
+    text-align: left;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: lighter;
+    min-height: fit-content;
+}
+
+
+
+@media (min-width: 660px) {
+  body,
+  .flex {
+    height: 100vh;
+  }
+
+  .flex {
+    flex-direction: row;
+    margin: 0;
+
+  }
+  .card1{
+      border-radius: 10px 0 0 10px;
+  }
+  .card3{
+      border-radius: 0 10px 10px 0;
+  }
+}
